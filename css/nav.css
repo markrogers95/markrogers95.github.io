@@ -11,6 +11,10 @@
     font-weight: 300 !important;
 }
 
+.bg-dark {
+    background-color: rgb(30, 9, 212, 0.1)!important;
+}
+
 .navbarBG {
     color: black !important;
     background-color: cornsilk;
