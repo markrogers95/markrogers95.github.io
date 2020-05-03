@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 #bg img {
     min-height: 100%;
     min-width: 1024px;
@@ -7,7 +11,6 @@
     top: 0;
     left: 0;
 }
-
 @media screen and (max-width: 1024px) {
     #bg img {
       left: 50%;
@@ -15,38 +18,21 @@
     }
 }
 
-.text-wrap{
-    position: fixed;
+.text-wrap {
     width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+    height: 100vh;
     text-align: center;
-}
-
-.t {
-    color: white;
     position: absolute;
 }
 
 .page-header {
     display: inline-block;
-    position: absolute;
-    
-    transform: translateX(-50%) translateY(-50%);
-    top: 45%;
-    
+    transform: translateY(175%);       
 }
 
-.listPos{
-    text-align: center;
-    position :relative;
-}
-
-.scrollList {
-    position: relative;
-    left: 18.5%;
-    font-size: 1.5em;
+.listPos, .scrollList {
+    font-size: 1.3em;
+    cursor: pointer;
 }
 .mainTitle {
     font-size: 3em;
@@ -56,19 +42,46 @@
     letter-spacing: 5px;
 }
 
-.mainUnder {
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: white;
-
+.about{
+    width: 100%;
     position: relative;
-   
-    
+    display: inline-block;
+    color: white;
+    margin-top: 175vh;
+    text-align: left;
+}
+
+.info {
+    font-size: 1.75em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20%;
+}
+
+.me {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+}
+
+.mainTitle {
+    color: white;
+    position: relative;
+    text-align: left;
+}
+
+.footer {
+    position: relative;
+    margin-top: 260px;
+    color: white;
+    text-align: center;
 }
 
 i {
-    color: black;
+    color: rgb(200, 200, 180);
     font-weight: 1;
     transition: all .5s linear;
 }
@@ -77,41 +90,26 @@ i:hover {
     color:white;
 }
 
-
-
-.landScroll #chev {
-    transition: transform 1s;
-    padding-right: 2px;
-}
-
-.landScroll:hover{
-    cursor: pointer;
-}
-
 .landScroll:hover #chev {
     transform:rotate(90deg);
     color: white;
 }
 
 
-
-.page-header .landScroll {
+.landScroll {
     color: white;
-    position: absolute;
-    left:20%;
-    padding-top: 7px;
+    padding-top: 5px;
     font-size: .75em;
     font-weight: 300;
     transition: all .5s linear;
-
-}
-
-.landingPage{
-    position: relative;
 }
 
 .scrollList{
     text-align: center;
+}
+
+#chev {
+    color: white !important;
 }
 
 
@@ -120,21 +118,4 @@ i:hover {
     .listPos{
         left: 1% !important;
     }
-}
-
-body .padtop0 {
-    padding-top: 0px;
-}
-
-body .padX0 {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.white {
-    color: white;
-}
-
-.about {
-    position: relative;
 }
