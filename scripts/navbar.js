@@ -65,11 +65,17 @@ function footerCheck(){
 
     var foot = document.getElementById("footer");
     var footDist = $(window).scrollTop();
+    var optional = document.getElementById("optional");
 
     if (footDist < 100){
         foot.style.display = 'none';
     }
     else foot.style.display = 'block';
+
+    if ($(window).width() < 767){
+        optional.style.display = 'none';
+    }
+    else optional.style.display = 'block';
 };
 
 window.onscroll = function() {navScroll(); footerCheck();};
