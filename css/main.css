@@ -101,9 +101,13 @@ i:hover {
 
 /* About screening */
 @media(max-width:768px){
-    .info{
+    .info {
         margin-top: 40%;
         padding-top: 100px;
+        font-size: 1.6em;
+    }
+    .me {
+        margin-top: 5px;
     }
 }
 
