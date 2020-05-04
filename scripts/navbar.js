@@ -14,13 +14,16 @@
 
 function checkSize(){
 
+    console.log("Triggered")
+
     var nav = document.getElementById("global-nav");
     var rectShow = document.getElementsByClassName("activeRect");
 
     if ($(window).width() <= 767){
 
         for (var i = 0; i < rectShow.length; i++){
-            rectShow[i].style.display = 'none';
+            rectShow[i].style.display = 'none'
+            console.log("Should do");
           }
 
         nav.classList.add("bg-dark");
@@ -58,6 +61,17 @@ function navScroll(){
     }
 };
 
-window.onscroll = function() {navScroll()};
-window.onresize = function() {checkSize()};
-window.onload = function() {this.checkSize()};
+function footerCheck(){
+
+    var foot = document.getElementById("footer");
+    var footDist = $(window).scrollTop();
+
+    if (footDist < 100){
+        foot.style.display = 'none';
+    }
+    else foot.style.display = 'block';
+};
+
+window.onscroll = function() {navScroll(); footerCheck();};
+window.onresize = function() {checkSize(); footerCheck();};
+window.onload = function() {checkSize(); footerCheck();};
