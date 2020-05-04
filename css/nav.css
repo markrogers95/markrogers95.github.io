@@ -13,15 +13,10 @@
 .bg-dark {
     background-color: rgb(30, 9, 212, 0.1)!important;
 }
-.navbarBG {
-    color: black !important;
-    background-color: cornsilk;
-}
 .nav-link, .navbar-brand{
 
     transition:all .75s ease-in-out;
     position:relative;
-
     padding-bottom:5px;
     padding-top:5px; 
     margin-left:4px;
@@ -30,6 +25,8 @@
 .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.226) !important;
 }
+
+
 svg {
     height: 33px;
     left: 0;
@@ -44,6 +41,8 @@ rect {
     stroke-dasharray: 50, 110;
     transition: all 0.35s linear;
 }
+
+
 a:hover svg rect
     {
     stroke-width: 2;
