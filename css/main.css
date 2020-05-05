@@ -108,6 +108,7 @@ i:hover {
 @media(max-width:768px){
     .info {
         font-size: 1.6em;
+        margin-top: 10%;
     }
     .me {
         margin-top: 5px;
