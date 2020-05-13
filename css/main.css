@@ -127,7 +127,8 @@ i:hover {
 .slider {
     max-width: 940px;
     margin: 0px auto 30px auto;
-    padding-top: 5%;}
+    padding-top: 5%;
+}
   
 .slide-viewer {
     position: relative; /* needed for IE7 */
@@ -149,13 +150,71 @@ i:hover {
     display: block;}
 
 .slide-1 {
-    background-color: rgba(220, 220, 180, 0.774);
+    background-color: rgba(66, 64, 64, 0.4);
+    border-radius: 25px;
+    border: 1px solid white;
+    text-align: left;
 }
 
 .slide-2 {
-    background-color: rgba(220, 220, 180, 0.774);
+    background-color: rgba(66, 64, 64, 0.4);
+    border-radius: 25px;
+    border: 1px solid white;
+    text-align: right;
 }
-  
+
+.left-panel {
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.right-panel {
+    height: 100%;
+    width: 50%;
+    float: right;
+    overflow: auto;
+}
+
+.slide-title{
+    position: relative;
+    padding-top: 10%;
+    padding-right: 10%;
+    font-size: 1em;
+}
+
+.slide-content-title {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;    
+}
+
+.slide-img-holder{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    transform: translateY(50%);
+}
+
+.webImg {
+    object-fit: cover;
+    border-radius: 10%;
+    height: 70%;
+    width: 50%;
+}
+
+.website-repo {
+    position: relative;
+    padding-top: 15%;
+    cursor: pointer;
+    color: white !important;
+}
+
+.website-repo a {
+    text-decoration: none;
+    color: white !important;
+}
   
 /********** BUTTONS **********/
 
