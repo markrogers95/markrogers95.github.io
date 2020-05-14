@@ -82,30 +82,44 @@ function adjust(){
     console.log("Here we are");
     
     if (scrollCount == 0){
-        $("html, body").animate({ scrollTop: 0 }, 1500);
+        $("html, body").animate({ scrollTop: 0 }, 200);
         console.log("Adjusted to top");
     }
     if (scrollCount == 1){
         $('html, body').animate({
             scrollTop: ($('#abLoc').offset().top)
-        },500);
+        },200);
         console.log("Adjusted to about");
+    }
+    if (scrollCount == 2){
+        $('html, body').animate({
+            scrollTop: ($('#projLoc').offset().top)
+        },200);
+        console.log("Adjusted to projects");
     }
 }
 
 $("a[href='#aboutBut']").click(function() {
     $('html, body').animate({
         scrollTop: $("#abLoc").offset().top  + $(this).height() / 2
-    }, 1500);
+    }, 500);
     console.log("Clicked");
     scrollCount = 1;
 });
 
 $("a[href='#top']").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, 1500);
+    $("html, body").animate({ scrollTop: 0 }, 500);
     scrollCount = 0;
     return false;
   });
+
+$("a[href='#projectBut']").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#projLoc").offset().top  + $(this).height() / 2
+    }, 500);
+    console.log("Clicked");
+    scrollCount = 2;
+});
 
 window.onscroll = function() {navScroll(); mainCheck();};
 window.onresize = function() {checkSize(); mainCheck(); adjust();};

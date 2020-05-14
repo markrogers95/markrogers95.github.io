@@ -1,8 +1,8 @@
-/* Overflow control */
+/* Overflow control 
 body {
     overflow: hidden;
 }
-
+*/
 /* Background image */
 #bg img {
     min-height: 100%;
@@ -20,17 +20,58 @@ body {
     }
 }
 
-/* Title wrap */
+/* Wrappers and centered divs */
 .title-wrap {
     width: 100%;
     height: 100vh;
     text-align: center;
     position: relative;
 }
-.page-header {
-    display: inline-block;
-    margin-top: 25%;       
+.title-body {
+    position: relative;
+    width: 70%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    color: white;   
 }
+.aboutWrap{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+}
+.about-body{
+    position: relative;
+    width: 70%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.projectsWrap{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-align: left;
+}
+.projects-body {
+    position: relative;
+    width: 70%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+/*OTHER STUFF TO TIDY */
+
 .listPos, .scrollList {
     font-size: 1.3em;
     cursor: pointer;
@@ -40,8 +81,8 @@ body {
     font-size: 3em;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: white;
     letter-spacing: 5px;
+    padding-top: 20%;
 }
 i {
     color: rgb(200, 200, 180);
@@ -66,54 +107,119 @@ i:hover {
     color: white !important;
 }
 
-/* Title screening */
-@media (max-width:768px){
-    .page-header{
-        margin-top: 30%;
-    }
-}
-
-/* About wrapper */
-.aboutWrap{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: inline-block;
-    color: white;
-    text-align: left;
-}
-
-.about{
-    position: relative;
-    
-}
-
 .info {
-    font-size: 1.75em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;  
-    margin-top: 20%;
-    margin-left: 20%;
-    margin-right: 20%;
+    font-size: 1.75em; 
+    padding-top: 15%;
+    font-weight: 100;
 }
-
 .me {
-    margin-top: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
     font-weight: 100;
 }
 
-/* About screening */
-@media(max-width:768px){
-    .info {
-        font-size: 1.6em;
-        margin-top: 25%;
-    }
-    .me {
-        margin-top: 5px;
-    }
+.projects-title {
+    font-size: 1.75em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    padding-top: 5%;
 }
+
+/* Slider stuff */
+.slider {
+    max-width: 940px;
+    margin: 0px auto 30px auto;
+    padding-top: 5%;
+} 
+.slide-viewer {
+    position: relative;
+    overflow: hidden;
+    height: 430px;
+}
+.slide-group {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+} 
+.slide:first-child {
+    display: block;
+}
+.slide-1 {
+    background-color: rgba(66, 64, 64, 0.4);
+    border-radius: 25px;
+    border: 1px solid white;
+    text-align: left;
+}
+.slide-2 {
+    background-color: rgba(66, 64, 64, 0.4);
+    border-radius: 25px;
+    border: 1px solid white;
+    text-align: left;
+}
+.left-panel {
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.right-panel {
+    height: 100%;
+    width: 50%;
+    float: right;
+    overflow: auto;
+}
+.slide-title{
+    position: relative;
+    padding-top: 10%;
+    padding-right: 10%;
+    font-size: 1em;
+}
+.slide-content-title {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;    
+}
+.slide-img-holder{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    transform: translateY(50%);
+}
+.webImg {
+    object-fit: cover;
+    border-radius: 10%;
+    height: 70%;
+    width: 50%;
+    opacity: 0.75;
+}
+.website-repo {
+    position: relative;
+    padding-top: 15%;
+    cursor: pointer;
+    color: white !important;
+}
+.website-repo a {
+    text-decoration: none;
+    color: white !important;
+}
+  
+/* Slider buttons */
+.slide-buttons {
+  text-align: center;} 
+.slide-btn {
+    border: none;
+    outline: none;
+    background: none;
+    color: #000;
+    font-size: 200%;} 
+.slide-btn.active, .slide-btn:hover {
+  color:white;
+  cursor: pointer;
+  border: none;}
 
 /* Footer */
 .footer {
