@@ -231,5 +231,19 @@ i:hover {
     width: 100%;
 }
 
+.contact-wrapper{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
 
-
+.contact-form{
+    width: 85%;
+    height: 70%;
+    position: relative;
+    top: 15%;
+    left: 15%;
+}
