@@ -13,6 +13,7 @@
  */
 
 var scrollCount = 0;
+var currentState = 0;
 
 function checkSize(){
 
@@ -63,8 +64,11 @@ function navScroll(){
 function mainCheck(){
 
     var foot = document.getElementById("footer");
+    
     var footDist = $(window).scrollTop();
     var optional = document.getElementById("optional");
+
+   
 
     if (footDist < 100){
         foot.style.display = 'none';
@@ -119,6 +123,33 @@ $("a[href='#projectBut']").click(function() {
     }, 500);
     console.log("Clicked");
     scrollCount = 2;
+});
+
+$("a[href='#contactBut']").click(function(){
+
+    var hideSection = document.getElementsByClassName("contact-script");
+    var showSection = document.getElementById("contactShow");
+
+    for (var i = 0; i < hideSection.length ; i++){
+        if (currentState == 0){
+            hideSection[i].style.display = 'none';
+        }
+        else if (currentState == 1){
+            hideSection[i].style.display = 'block';
+        }
+    }
+    
+    if (currentState == 0){
+        showSection.style.display ='block';
+        $("#contactForm").animate({ "right": '-15%' }, 1000);
+        currentState = 1;
+    }
+    else if (currentState == 1){
+        currentState = 0;
+        $("#contactForm").animate({ "right": -3000 }, 1000);
+        showSection.style.display = 'none';
+    }
+
 });
 
 window.onscroll = function() {navScroll(); mainCheck();};
