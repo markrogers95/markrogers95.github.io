@@ -86,19 +86,19 @@ function adjust(){
     console.log("Here we are");
     
     if (scrollCount == 0){
-        $("html, body").animate({ scrollTop: 0 }, 200);
+        $("html, body").animate({ scrollTop: 0 }, 0);
         console.log("Adjusted to top");
     }
     if (scrollCount == 1){
         $('html, body').animate({
             scrollTop: ($('#abLoc').offset().top)
-        },200);
+        },0);
         console.log("Adjusted to about");
     }
     if (scrollCount == 2){
         $('html, body').animate({
             scrollTop: ($('#projLoc').offset().top)
-        },200);
+        },0);
         console.log("Adjusted to projects");
     }
 }
@@ -141,13 +141,15 @@ $("a[href='#contactBut']").click(function(){
     
     if (currentState == 0){
         showSection.style.display ='block';
-        $("#contactForm").animate({ "right": '-15%' }, 1000);
+        $("#contactForm").animate({ "right": '-15%' }, 200);
         currentState = 1;
     }
     else if (currentState == 1){
         currentState = 0;
-        $("#contactForm").animate({ "right": -3000 }, 1000);
-        showSection.style.display = 'none';
+        $("#contactForm").animate({ "right": -3000 }, 200, function(){
+            showSection.style.display = 'none';
+            adjust();
+         });
     }
 
 });
