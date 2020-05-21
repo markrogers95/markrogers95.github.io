@@ -141,13 +141,14 @@ $("a[href='#contactBut']").click(function(){
     
     if (currentState == 0){
         showSection.style.display ='block';
-        $("#contactForm").animate({ "right": '-15%' }, 200);
+        $("#contactForm").animate({ "right": '-10%' }, 200);
         currentState = 1;
     }
     else if (currentState == 1){
         currentState = 0;
-        $("#contactForm").animate({ "right": -3000 }, 200, function(){
+        $("#contactForm").animate({ "right": '-2000px' }, 200, function(){
             showSection.style.display = 'none';
+            console.log('out');
             adjust();
          });
     }
