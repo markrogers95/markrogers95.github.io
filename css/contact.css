@@ -1,75 +1,81 @@
 /* Background image */
 #bg img {
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-@media screen and (max-width: 1024px) {
-    #bg img {
-      left: 50%;
-      margin-left: -512px;
-    }
+@media screen and (max-width: 1024px){
+  #bg img {
+    left: 50%;
+    margin-left: -512px;
+  }
 }
-
 .contact-wrapper{
-    width: 100%;
-    position: absolute;
+  width: 100%;
+  position: absolute;
 }
-
 .contact-form {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    position: relative;
-    width: 70%;
-    margin-top: 15%;
-    margin-left: 15%;
-    margin-bottom: 10%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  opacity: 0.9;
+  position: relative;
+  width: 60%;
+  margin-top: 15%;
+  margin-left: 20%;
+  margin-bottom: 10%;
+  overflow-x: auto;
 }
-
 #form input.botcatch{
-    visibility: hidden;
-    height: 0;
-    line-height: 0;
-    font-size: 0;
-    margin: 0;
-    padding: 0;
-    border: none;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
-
-form {
-    position: relative;
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+form{
+  position: relative;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px; 
-    border: 1px solid #ccc;
-    border-radius: 4px; 
-    box-sizing: content-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px;
-    resize: vertical 
-  }
-  
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: content-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical 
+}
+input[type=submit]{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.succerr{
+  position: relative;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font: 2.5em;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  padding-left: 10%;
+  padding-right: 10%;
+}

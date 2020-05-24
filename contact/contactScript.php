@@ -35,25 +35,12 @@ $name = stripslashes( $name );
 $subject = stripslashes( $subject );
 $message = stripslashes( $message );
 }
-
 if (!isset($_POST['email'])) {
 header( "Location: $formurl" ); 
 }
-
 elseif ($_POST['catchbot'] !="") {
 die();
 }
-
-elseif (empty($email) || empty($name) || empty($subject)) {
-header( "Location: $errorurl" );
-}
-
-elseif
-(!preg_match("/^[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$/i",$email)) {
-header( "Location: $errorurl" );
-exit ;
-}
-
 elseif ( preg_match( "[\r\n]", $name ) || preg_match( "[\r\n]", $email ) ) {
 header( "Location: $errorurl" );
 exit ;
