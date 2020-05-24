@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- My style sheets -->
+    <link rel="stylesheet" href="../css/nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contact.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3194b321f.js" crossorigin="anonymous"></script>
+
+    <title>Contact</title>
+
+    </head>
+    <body>
+        <!--Nav bar wrapper -->
+        <nav id="global-nav" class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container">
+                <a id="navbar-brand" class="navbar-brand" href="../index.html">
+                    Mark Rogers
+                </a>
+                <button type="button" data-toggle="collapse" data-target="#navbarTabs" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarTabs" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="">
+                            <a class="nav-link" href="#top">
+                                <svg class="activeRect">
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>                                
+                                </svg>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- background image -->
+        <div id="bg">
+            <img src="../images/anne-nygard-wgggZIP_voA-unsplash.jpg" alt=""/>   
+        </div>
+
+        <div class="contact-wrapper" id="contactShow">
+            <div class="contact-form">
+                <form method="post" action="contactScript.php">
+                    <fieldset id="form">
+                    <legend>Get in touch!</legend>
+                    <p>Required field<strong title="Required" class="req">*</strong></p>
+                    <label for="email">Your Email:<strong title="Required" class="req">*</strong>
+                    <input id="email" name="email" type="text" size="35"/>
+                    </label>
+                    <label for="name">Name:<strong title="Required" class="req">*</strong>
+                    <input id="name" name="name" type="text" size="39"/>
+                    </label>
+                    <label for="subject">Subject:<strong title="Required" class="req">*</strong>
+                    <input id="subject" name="subject" type="text" size="38"/>
+                    </label>
+                    <label for="message">Message:
+                    <textarea id="message" name="message" rows="5" cols="40"></textarea>
+                    </label>
+                    <input name="catchbot" class="botcatch" type="text" value=""/>
+                    <label class="submit" for="submit">
+                    <input id="submit" type="submit" value="Submit"/>
+                    </label>
+                    </fieldset>
+                    </form>                                              
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script>
+            $("a[href='#top']").click(function() {
+                $("html, body").animate({ scrollTop: 0 }, 500);
+                scrollCount = 0;
+                return false;
+                });
+        </script>
+</body>    
+</html>

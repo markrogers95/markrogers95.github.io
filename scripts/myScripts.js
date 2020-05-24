@@ -13,6 +13,7 @@
  */
 
 var scrollCount = 0;
+var currentState = 0;
 
 function checkSize(){
 
@@ -63,8 +64,11 @@ function navScroll(){
 function mainCheck(){
 
     var foot = document.getElementById("footer");
+    
     var footDist = $(window).scrollTop();
     var optional = document.getElementById("optional");
+
+   
 
     if (footDist < 100){
         foot.style.display = 'none';
@@ -82,19 +86,19 @@ function adjust(){
     console.log("Here we are");
     
     if (scrollCount == 0){
-        $("html, body").animate({ scrollTop: 0 }, 200);
+        $("html, body").animate({ scrollTop: 0 }, 0);
         console.log("Adjusted to top");
     }
     if (scrollCount == 1){
         $('html, body').animate({
             scrollTop: ($('#abLoc').offset().top)
-        },200);
+        },0);
         console.log("Adjusted to about");
     }
     if (scrollCount == 2){
         $('html, body').animate({
             scrollTop: ($('#projLoc').offset().top)
-        },200);
+        },0);
         console.log("Adjusted to projects");
     }
 }

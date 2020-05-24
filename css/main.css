@@ -1,8 +1,7 @@
-/* Overflow control 
-body {
+body{
     overflow: hidden;
 }
-*/
+
 /* Background image */
 #bg img {
     min-height: 100%;
@@ -230,6 +229,3 @@ i:hover {
     bottom: 0;
     width: 100%;
 }
-
-
-
