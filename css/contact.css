@@ -95,5 +95,5 @@ h2 a{
 }
 h2 a:hover{
   text-decoration: none;
-  color: black;
+  color: grey;
 }
