@@ -65,7 +65,7 @@ input[type=submit]{
   cursor: pointer;
 }
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #357e39;
 }
 .succerr{
   position: relative;
@@ -78,4 +78,22 @@ input[type=submit]:hover {
   font-weight: 100;
   padding-left: 10%;
   padding-right: 10%;
+}
+p{
+  padding-top: 10px;
+}
+h2{
+  text-align: center;
+  padding-top: 10px;
+}
+h2 a{
+  color: black;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 0.6em;
+}
+h2 a:hover{
+  text-decoration: none;
+  color: black;
 }
