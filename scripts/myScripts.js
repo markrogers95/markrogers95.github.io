@@ -125,36 +125,6 @@ $("a[href='#projectBut']").click(function() {
     scrollCount = 2;
 });
 
-$("a[href='#contactBut']").click(function(){
-
-    var hideSection = document.getElementsByClassName("contact-script");
-    var showSection = document.getElementById("contactShow");
-
-    for (var i = 0; i < hideSection.length ; i++){
-        if (currentState == 0){
-            hideSection[i].style.display = 'none';
-        }
-        else if (currentState == 1){
-            hideSection[i].style.display = 'block';
-        }
-    }
-    
-    if (currentState == 0){
-        showSection.style.display ='block';
-        $("#contactForm").animate({ "right": '-10%' }, 200);
-        currentState = 1;
-    }
-    else if (currentState == 1){
-        currentState = 0;
-        $("#contactForm").animate({ "right": '-2000px' }, 200, function(){
-            showSection.style.display = 'none';
-            console.log('out');
-            adjust();
-         });
-    }
-
-});
-
 window.onscroll = function() {navScroll(); mainCheck();};
 window.onresize = function() {checkSize(); mainCheck(); adjust();};
 window.onload = function() {checkSize(); mainCheck();};
