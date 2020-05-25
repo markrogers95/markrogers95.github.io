@@ -1,7 +1,3 @@
-body{
-    overflow: hidden;
-}
-
 /* Background image */
 #bg img {
     min-height: 100%;
@@ -67,6 +63,7 @@ body{
     margin-top: 10%;
     margin-left: 15%;
     margin-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 /*OTHER STUFF TO TIDY */
@@ -191,6 +188,9 @@ i:hover {
     padding-right: 5%;
     padding-bottom: 5%;
 }
+.tabs{
+    padding-bottom: 10%;
+}
 
   /* Footer */
 .footer {
@@ -203,10 +203,18 @@ i:hover {
 }
 @media (max-width:767px){
     body{
-        overflow: scroll;
+        overflow: auto;
     }
     .about-body .projects-body .title-body{
         width: 100%;
     }
-    
+    .tabs{
+        padding-bottom: 30%;
+    }
+
+}
+@media (min-width:768px){
+    body{
+    overflow: hidden;
+    }
 }
