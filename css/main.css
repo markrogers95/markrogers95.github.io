@@ -106,7 +106,6 @@ i:hover {
 #chev {
     color: white !important;
 }
-
 .info {
     font-size: 1.75em; 
     padding-top: 15%;
@@ -115,7 +114,6 @@ i:hover {
 .me {
     font-weight: 100;
 }
-
 .projects-title {
     font-size: 1.75em;
     font-family: 'Roboto', sans-serif;
@@ -123,105 +121,78 @@ i:hover {
     padding-top: 5%;
 }
 
-/* Slider stuff */
-.slider {
-    max-width: 940px;
-    margin: 0px auto 30px auto;
+/* Tab panel */
+.tabs{
     padding-top: 5%;
-} 
-.slide-viewer {
-    position: relative;
-    overflow: hidden;
-    height: 430px;
 }
-.slide-group {
-    width: 100%;
-    height: 100%;
-    position: relative;
+.tab-list {
+    margin: 0;
+    padding-left: 20px;
 }
-.slide {
-    width: 100%;
-    height: 100%;
-    display: none;
-    position: absolute;
-} 
-.slide:first-child {
-    display: block;
-}
-.slide-1 {
-    background-color: rgba(66, 64, 64, 0.4);
-    border-radius: 25px;
-    border: 1px solid white;
-    text-align: left;
-}
-.slide-2 {
-    background-color: rgba(66, 64, 64, 0.4);
-    border-radius: 25px;
-    border: 1px solid white;
-    text-align: left;
-}
-.left-panel {
-    height: 100%;
-    width: 50%;
-    float: left;
-    text-align: center;
-}
-.right-panel {
-    height: 100%;
-    width: 50%;
-    float: right;
-    overflow: auto;
-}
-.slide-title{
-    position: relative;
-    padding-top: 10%;
-    padding-right: 10%;
+.tab-list li{
+    display: inline-block;
+    list-style-type: none;
+    background-color: #4CAF50;
+    border-bottom: 2px solid #858585;
     font-size: 1em;
+    color: white;
 }
-.slide-content-title {
-    font-size: 1.5em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;    
+.tab-list li p{
+    padding-top: 5px;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 3px;
 }
-.slide-img-holder{
-    position: relative;
-    height: 50%;
-    width: 100%;
-    transform: translateY(50%);
+.tab-list li.active p{
+    color: black;
 }
-.webImg {
-    object-fit: cover;
-    border-radius: 10%;
-    height: 70%;
-    width: 50%;
-    opacity: 0.75;
+.tab-list li{
+    border-radius: 5px 5px 0px 0px;
 }
-.website-repo {
-    position: relative;
-    padding-top: 15%;
-    cursor: pointer;
-    color: white !important;
+.tab-list li a{
+    color: black;
+    display: block;
+    font-size: small;
+    font-weight: 100 !important;
+    padding: 3px 5px 3px 5px;
+    opacity: 0.8;
 }
-.website-repo a {
-    text-decoration: none;
-    color: white !important;
+.tab-list li.active, .tab-list li.hover {
+  background-color: white;
+  border-bottom: 2px solid white;
+  text-decoration: none;
+  opacity: 0.8;
 }
-  
-/* Slider buttons */
-.slide-buttons {
-  text-align: center;} 
-.slide-btn {
-    border: none;
-    outline: none;
-    background: none;
-    color: #000;
-    font-size: 200%;} 
-.slide-btn.active, .slide-btn:hover {
-  color:white;
-  cursor: pointer;
-  border: none;}
+.tab-list li.active a, .tab-list li a:hover {
+  color: #666;
+  background-color: white;
+  border-radius: 5px 5px 0px 0px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.tab-panel {
+  display: none;
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+  min-height: 400px;
+  max-height: 400px;
+  border-radius: 5px;
+  overflow: auto;
+}
+.tab-panel.active {
+  display: block;}
+.tab-panel p {
+  margin: 20px;}
 
-/* Footer */
+.projects-content{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+  /* Footer */
 .footer {
     position: fixed;
     color: white;

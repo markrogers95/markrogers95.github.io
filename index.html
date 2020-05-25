@@ -135,81 +135,114 @@
              <h2 class="projects-title">
                  Projects
              </h2>
-             <div class="slider">
-                 <div class="slide-viewer">
-                     <div class="slide-group">
-                         <div class="slide slide-1">
-                            <div class="left-panel">
-                                <div class="slide-img-holder">
-                                    <img class="webImg" src="images/greg-rakozy-vw3Ahg4x1tY-unsplash.jpg"/>
-                                </div>
-                                <div class="website-repo">
-                                <a href="https://github.com/markrogers95/markrogers95.github.io">
-                                    <i class="fab fa-github"></i> - repo here!
-                                </a>
-                            </div>
-                            </div>
-                             <div class="right-panel">
-                                 <div class="slide-title">
-                                     <h2 class="slide-content-title">
-                                         this.website!
-                                    </h2>
-                                    <p>
-                                        A first foray into web development and a fun little 
-                                        weekend/after-work project, this website has served as 
-                                        an introduction to Html, CSS, Javascript and (indirectly) 
-                                        git.
-                                    </p>
-                                    <p>
-                                        I've tried to rely mainly on just the bare bones in HTML, 
-                                        CSS and Javascript; while there is certainly some Bootstrap 
-                                        and JQuery kicking around, it is minimal and that is deliberate!
-                                    </p>
-                                    <p>
-                                        There is alot more I would like to do with this website to further 
-                                        my knowledge of web development - so watch this space!
-                                    </p>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="slide slide-2">
-                            <div class="left-panel">
-                                <div class="slide-img-holder">
-                                    <img class="webImg" src="images/john-morgan-4eBOPIJliNc-unsplash.jpg"/>
-                                </div>
-                                <div class="website-repo">
-                                <a href="https://github.com/markrogers95/Sudoku-Solver">
-                                    <i class="fab fa-github"></i> - repo here!
-                                </a>
-                            </div>
-                            </div>
-                             <div class="right-panel">
-                                 <div class="slide-title">
-                                     <h2 class="slide-content-title">
-                                        Sudoku in C!
-                                    </h2>
-                                    <p>
-                                        This was my second undertaking, a command line 
-                                        sudoku solver written in C.                                     
-                                    </p>
-                                    <p>
-                                        C was the first language I learnt and I wanted 
-                                        a project that would let me put it into practice.. 
-                                        that, and I needed a Sudoku cheat code.
-                                    </p>
-                                    <p>
-                                        It served as a gentle introduction to algorithms 
-                                        (implementing a backtracking algorithm) and definitely 
-                                        helped consolidate some of the basics.
-                                    </p>
-                                 </div>
-                             </div>                             
-                           
-                         </div>
-                     </div>
-                 </div>
-                 <div class="slide-buttons"></div>
-             </div>
+             <div class="tabs">
+
+                <ul class="tab-list">
+                  <li class="active"><a class="tab-control" href="#tab-1"><p>Overview</p></a></li>
+                  <li><a class="tab-control" href="#tab-2"><p>this.Website</p></a></li>
+                  <li><a class="tab-control" href="#tab-3"><p>C-sudoku</p></a></li>
+                  <li><a class="tab-control" href="#tab-4"><p>Whats next?</p></a></li>
+                </ul>
+        
+                <div class="tab-panel active" id="tab-1">
+                    <div class="projects-content">
+                        <p> The purpose of this website is to detail a little about 
+                            myself and a little about the projects i'm putting together 
+                            in my free time.
+                        </p>
+                        <p>
+                            Dotted around the site are links to my socials, including my 
+                            Github, but this sections serves to provide a brief outline 
+                            of what i've managed so far and what I intend to get round to 
+                            in the not so distant future!
+                        </p>
+                        <p>
+                            That being said, get clicking to find out more..
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="tab-panel" id="tab-2">
+                    <div class="projects-content">
+                        <p>
+                            This website was the first project I started work on and, 
+                            as previously mentioned, one of its purposes is to provide 
+                            a little background on both me and the projects I'm working on. 
+
+                        </p>
+                        <p>
+                            However, whilst the above is well and good the real reason for 
+                            putting this website together was to start on a learning path 
+                            towards web-development!
+                        </p>
+                        <p>
+                            I've created this website as a first effort in an about as vanilla 
+                            way as possible. I've got to grips with HTML, CSS and Javascript in 
+                            a decent way with a little JQuery and PHP thrown in for good measure. I've 
+                            tried not to rely on Bootstrap, and although it is definitely present, 
+                            its usage has been minimal. I'm still getting to grips with targeted 
+                            layout according to device screen size but that'll be sorted soon. The 
+                            contact form has all the bells and whilstles required to process server side 
+                            and send an email without the need for your own client but due to the nature 
+                            of Github's hosting that is on hold for now!
+                        </p>
+                        <p>
+                            It's primitive now, but it won't be for long! Watch this space..
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="tab-panel" id="tab-3">
+                    <div class="projects-content">
+                        <p>
+                            Project number two was a command line Sudoku solver written in C. I 
+                            wanted to do something that would help consoliate the laguage basics  
+                            and also maybe also get a little use when I was done!
+                        </p>
+                        <p>
+                            I knew I wanted to practice the basics like reading/writing from/to file, 
+                            pointer/array arithmetic and linking and compiling different files. I tried to 
+                            include some basic error handling and redundancy but didn't go crazy here.                            
+                        </p>
+                        <p>
+                            I got a little taste of algorithms whilst working on this project as it implements 
+                            a fairly simple backtracking algorithm that explores every solution in sequence up 
+                            until failure or a successful solve.                             
+                        </p>
+                        <p>
+                            Again this is a project I hope to revisit in the not-so-distant future,  
+                            moving away from the command line and towards a more visual approach, perhaps 
+                            by way of a simple web app in React!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="tab-4">
+                    <div class="projects-content">
+                        <p>
+                            Moving forward here's a few ideas on what I would like to have a go 
+                            at next..
+                        </p>
+                        <p>
+                            I'm currently making my way through T.H.Cormen and Co.'s "Introduction 
+                            to Algorithms" and as such would quite like to try my hand at implementing 
+                            a few of these and present their working visually with a web app! I've 
+                            enjoyed the sections on Sorting Algorithms and Red-Black trees so will probably 
+                            look to one or both of these as project ideas next!
+                        </p>
+                        <p>
+                            Something else that I find really interesting, more as an aside, is game 
+                            programming with C++. I've seen a couple of neat C++ games kicking about and would 
+                            love to try my hand and getting my own up and running!
+                        </p>
+                        <p>
+                            Lots to look at here and there, and certainly enough to keep me busy through 
+                            lockdown and beyond!
+                        </p>
+                    </div>
+                </div>
+        
+              </div>
         </div>
     </div>
 
@@ -257,6 +290,6 @@
 
     <!-- javascript -->
     <script src="scripts/myScripts.js"></script>
-    <script src="scripts/sliderScript.js"></script>
+    <script src="scripts/projectsTab.js"></script>
 </body>
 </html>
