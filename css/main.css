@@ -201,3 +201,12 @@ i:hover {
     bottom: 0;
     width: 100%;
 }
+@media (max-width:767px){
+    body{
+        overflow: scroll;
+    }
+    .about-body .projects-body .title-body{
+        width: 100%;
+    }
+    
+}
