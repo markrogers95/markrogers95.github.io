@@ -221,10 +221,27 @@ i:hover {
         background-color: black;
         opacity: 0.8;
     }
-
 }
 @media (min-width:768px){
     body{
     overflow: hidden;
+    }
+}
+/* Aspect ratio things */
+@media (min-aspect-ratio: 8/5){
+    .title-body, .projects-body{
+        padding-top: 2% !important;
+    }
+    .about-body{
+        margin-top: 5%;
+    }
+    .info{
+        padding-top: 10%;
+    }
+    .projects-title{
+        padding-top: 0%;
+    }
+    .tabs{
+        padding-top: 2%;
     }
 }

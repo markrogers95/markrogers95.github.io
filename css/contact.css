@@ -48,11 +48,11 @@ form{
   padding-bottom: 5%;
 }
 input[type=text], select, textarea{
-  width: 100%;
+  width: 50vw;
   padding: 12px; 
   border: 1px solid #ccc;
   border-radius: 4px; 
-  box-sizing: content-box; 
+  box-sizing: content-box;
   margin-top: 6px; 
   margin-bottom: 16px;
   resize: vertical 
@@ -107,5 +107,8 @@ h2 a:hover{
     width: 95%;
     margin-left: 2.5%;
     margin-top: 15%;        
+  }
+  input[type=text], select, textarea{
+    width: 80vw !important;
   }
 }
