@@ -106,9 +106,17 @@ h2 a:hover{
   .contact-form{
     width: 95%;
     margin-left: 2.5%;
-    margin-top: 15%;        
+    margin-top: 15%; 
+    margin-right: 2.5%;       
   }
   input[type=text], select, textarea{
     width: 80vw !important;
+  }
+}
+
+@media (max-aspect-ratio: 5/6){
+  .contact-form{
+    padding-top: 10%;
+    margin-top: 10%;
   }
 }
