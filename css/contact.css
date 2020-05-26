@@ -98,3 +98,14 @@ h2 a:hover{
   text-decoration: none !important;
   color: grey !important;
 }
+
+@media (max-width:767px){
+  body{
+      overflow: auto;
+  }
+  .contact-form{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 15%;        
+  }
+}
