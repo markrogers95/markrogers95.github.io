@@ -63,6 +63,7 @@ a:hover svg rect
         -webkit-transition:height .5s,line-height .5s;
         -webkit-transition:height .5s,line-height .5s;
         transition:height .5s,line-height .5s;
+        
     }
     .scrolled{
         height:80px !important;
@@ -72,15 +73,19 @@ a:hover svg rect
     
     #global-nav{
         min-height:56px !important;
-        color:white;
         padding-top:15px;padding-bottom:15px;
-        font-size: 1em;
-        font-weight: 1;
+        font-size: 0.75em;
+        font-weight: 100;
         -webkit-transition:height .5s,line-height .5s;
         -webkit-transition:height .5s,line-height .5s;
         transition:height .5s,line-height .5s;
+        background-color: black !important;
+        color: white !important;
+        opacity: 0.95 !important;
     }
-    .navbar-toggler{
-        border-color:white;color:white;
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255);
+        opacity: 1;
     }
+
 }

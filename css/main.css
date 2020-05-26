@@ -172,8 +172,8 @@ i:hover {
   background-color: white;
   opacity: 0.8;
   color: black;
-  min-height: 400px;
-  max-height: 400px;
+  min-height: 50vh;
+  max-height: 50vh;
   border-radius: 5px;
   overflow: auto;
 }
@@ -201,15 +201,25 @@ i:hover {
     bottom: 0;
     width: 100%;
 }
+.footerSocial{
+    padding-top: 10px;
+}
+
 @media (max-width:767px){
     body{
         overflow: auto;
     }
-    .about-body .projects-body .title-body{
-        width: 100%;
+    .projects-body{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 15%;        
     }
     .tabs{
         padding-bottom: 30%;
+    }
+    .footer{
+        background-color: black;
+        opacity: 0.8;
     }
 
 }
