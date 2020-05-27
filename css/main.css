@@ -200,6 +200,8 @@ i:hover {
     left: 0;
     bottom: 0;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 .footerSocial{
     padding-top: 10px;
@@ -243,5 +245,23 @@ i:hover {
     }
     .tabs{
         padding-top: 2%;
+    }
+}
+
+@media (max-aspect-ratio: 4/5){
+    .title-body{
+        padding-top: 20% !important;
+    }
+    .about-body{
+        padding-top: 5%;
+    }
+    .footer{
+        font-size: 0.7em;
+    }
+    .projects-body{
+        padding-top: 10%;
+    }
+    .projects-title{
+        padding-top: 0%;
     }
 }
