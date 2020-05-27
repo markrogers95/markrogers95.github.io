@@ -1,17 +1,3 @@
-/*Script to alter navbar based on three events:
- *
- *   1. Window resize.
- *   2. Window load.
- *   3. Window scroll.
- * 
- * Two functions defined, navScroll and checkSize with the latter
- * applying to options 1 & 2, and the latter applying to option 3.
- * 
- * Both functions alter the appearance and behaviour of the navbar 
- * in line with specific window sizes.
- * 
- */
-
 var scrollCount = 0;
 var currentState = 0;
 
@@ -84,22 +70,22 @@ function mainCheck(){
 function adjust(){
 
     console.log("Here we are");
-    
-    if (scrollCount == 0){
-        $("html, body").animate({ scrollTop: 0 }, 0);
-        console.log("Adjusted to top");
-    }
-    if (scrollCount == 1){
-        $('html, body').animate({
-            scrollTop: ($('#abLoc').offset().top)
-        },0);
-        console.log("Adjusted to about");
-    }
-    if (scrollCount == 2){
-        $('html, body').animate({
-            scrollTop: ($('#projLoc').offset().top)
-        },0);
-        console.log("Adjusted to projects");
+
+    if($(window).width() > 767){
+        
+        if (scrollCount == 0){
+            $("html, body").animate({ scrollTop: 0 }, 0);
+        }
+        if (scrollCount == 1){
+            $('html, body').animate({
+                scrollTop: ($('#abLoc').offset().top)
+                },0);
+        }
+        if (scrollCount == 2){
+            $('html, body').animate({
+                scrollTop: ($('#projLoc').offset().top)
+                },0);
+        }
     }
 }
 

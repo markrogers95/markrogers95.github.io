@@ -111,6 +111,9 @@ i:hover {
 .me {
     font-weight: 100;
 }
+.me.top{
+    padding-top: 10px;
+}
 .projects-title {
     font-size: 1.75em;
     font-family: 'Roboto', sans-serif;
@@ -211,9 +214,9 @@ i:hover {
     body{
         overflow: auto;
     }
-    .projects-body{
-        width: 95%;
-        margin-left: 2.5%;
+    .projects-body, .about-body{
+        width: 90%;
+        margin-left: 5%;
         margin-top: 15%;        
     }
     .tabs{
@@ -252,9 +255,7 @@ i:hover {
     .title-body{
         padding-top: 20% !important;
     }
-    .about-body{
-        padding-top: 5%;
-    }
+
     .footer{
         font-size: 0.7em;
     }
@@ -263,5 +264,23 @@ i:hover {
     }
     .projects-title{
         padding-top: 0%;
+    }
+    .tab-list li a p{
+        font-size: 0.7em !important;
+    }
+    .projects-content p{
+        font-size: 0.7em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+    .mainTitle {
+        font-size: 2.5em;
+    }
+    .info{
+        font-size: 1.5em;
+    }
+    .me{
+        font-size: 0.8em;
     }
 }

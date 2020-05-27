@@ -114,9 +114,10 @@ h2 a:hover{
   }
 }
 
-@media (max-aspect-ratio: 5/6){
+@media (max-aspect-ratio: 4/5){
   .contact-form{
-    padding-top: 10%;
+    transform: translateY(5%);
+    padding-top: 0%;
     margin-top: 10%;
   }
 }
