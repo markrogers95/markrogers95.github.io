@@ -194,6 +194,10 @@ i:hover {
 .tabs{
     padding-bottom: 10%;
 }
+.first-tab{
+    padding-top: 10%;
+    text-align: center;
+}
 
   /* Footer */
 .footer {

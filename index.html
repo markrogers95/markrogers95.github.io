@@ -147,7 +147,7 @@
              <div class="tabs">
 
                 <ul class="tab-list">
-                  <li class="active"><a class="tab-control" href="#tab-1"><p>Overview</p></a></li>
+                  <li class="active"><a class="tab-control listHide" href="#tab-1"><p>Overview</p></a></li>
                   <li><a class="tab-control" href="#tab-2"><p>this.Website</p></a></li>
                   <li><a class="tab-control" href="#tab-3"><p>C-sudoku</p></a></li>
                   <li><a class="tab-control" href="#tab-4"><p>Whats next?</p></a></li>
@@ -155,18 +155,10 @@
         
                 <div class="tab-panel active" id="tab-1">
                     <div class="projects-content">
-                        <p> The purpose of this website is to detail a little about 
-                            myself and a little about the projects i'm putting together 
-                            in my free time.
-                        </p>
-                        <p>
-                            Dotted around the site are links to my socials, including my 
-                            Github, but this sections serves to provide a brief outline 
-                            of what i've managed so far and what I intend to get round to 
-                            in the not so distant future!
-                        </p>
-                        <p>
-                            That being said, get clicking to find out more..
+                        <p class="first-tab">
+                            This section is basically a self-serving show and tell on the little projects 
+                            I am working on at home! I'll briefly outline each, detail what I wanted to achive 
+                            and then talk about what I want to do next! That being said, get to clicking..
                         </p>
                     </div>
                 </div>
@@ -174,29 +166,21 @@
                 <div class="tab-panel" id="tab-2">
                     <div class="projects-content">
                         <p>
-                            This website was the first project I started work on and, 
-                            as previously mentioned, one of its purposes is to provide 
-                            a little background on both me and the projects I'm working on. 
-
+                            This website has been a great little starter project and really a lot of 
+                            fun to put together.. PLUS its kept me busy/semi-productive on many lockdown 
+                            evenings throughout Coronavirus. 
                         </p>
                         <p>
-                            However, whilst the above is well and good the real reason for 
-                            putting this website together was to start on a learning path 
-                            towards web-development!
+                            It's pretty vanilla, but has been dead useful in helping to get down with the 
+                            basics of HTML, CSS, Javascript and a little JQuery. I even felt adventurous enough 
+                            to put together a PHP script for the contact form which sends an email without 
+                            opening up your email client.
                         </p>
                         <p>
-                            I've created this website as a first effort in an about as vanilla 
-                            way as possible. I've got to grips with HTML, CSS and Javascript in 
-                            a decent way with a little JQuery and PHP thrown in for good measure. I've 
-                            tried not to rely on Bootstrap, and although it is definitely present, 
-                            its usage has been minimal. I'm still getting to grips with targeted 
-                            layout according to device screen size but that'll be sorted soon. The 
-                            contact form has all the bells and whilstles required to process server side 
-                            and send an email without the need for your own client but due to the nature 
-                            of Github's hosting that is on hold for now!
-                        </p>
-                        <p>
-                            It's primitive now, but it won't be for long! Watch this space..
+                            Ultimately its ticked all my initial boxes - its served as a pretty fun 'first-foray' 
+                            into web development, i've learned a lot from it and its kick me into some 
+                            evening productivity! It may be simple and it may be a little vanilla.. but 
+                            I like it. 
                         </p>
                     </div>
                 </div>
@@ -204,24 +188,19 @@
                 <div class="tab-panel" id="tab-3">
                     <div class="projects-content">
                         <p>
-                            Project number two was a command line Sudoku solver written in C. I 
-                            wanted to do something that would help consoliate the laguage basics  
-                            and also maybe also get a little use when I was done!
+                            I'm pretty pants at Sudoku for someone who spent the majority of their academic life 
+                            studying Maths - so I wrote a cheat code.
                         </p>
                         <p>
-                            I knew I wanted to practice the basics like reading/writing from/to file, 
-                            pointer/array arithmetic and linking and compiling different files. I tried to 
-                            include some basic error handling and redundancy but didn't go crazy here.                            
+                            It's a pretty neat little command line solver which runs in either "solve" or "check" 
+                            mode and helped cement the basics of programming in C. It prints either a full or 
+                            partial solution to screen/file depending on command line arguments and whether or not 
+                            a solve is possible. It implements a back-tracking algorithm and was it was real interesting 
+                            to have a play with.
                         </p>
                         <p>
-                            I got a little taste of algorithms whilst working on this project as it implements 
-                            a fairly simple backtracking algorithm that explores every solution in sequence up 
-                            until failure or a successful solve.                             
-                        </p>
-                        <p>
-                            Again this is a project I hope to revisit in the not-so-distant future,  
-                            moving away from the command line and towards a more visual approach, perhaps 
-                            by way of a simple web app in React!
+                            I'd quite like to take this one a little further in the near future by way of a GUI, or probably in 
+                            a Web App, to make it a little more user friendly - watch this space.
                         </p>
                     </div>
                 </div>
@@ -229,24 +208,21 @@
                 <div class="tab-panel" id="tab-4">
                     <div class="projects-content">
                         <p>
-                            Moving forward here's a few ideas on what I would like to have a go 
-                            at next..
+                            I've definitely enjoyed creating the website and the Sudoku solver with each 
+                            giving me some ideas on what to do next. I'm also currently making my way 
+                            through T.H.Cormen and Co.'s "Introduction to Algorithms" and would like to 
+                            incorporate at least some of the given examples into my next project.
                         </p>
                         <p>
-                            I'm currently making my way through T.H.Cormen and Co.'s "Introduction 
-                            to Algorithms" and as such would quite like to try my hand at implementing 
-                            a few of these and present their working visually with a web app! I've 
-                            enjoyed the sections on Sorting Algorithms and Red-Black trees so will probably 
-                            look to one or both of these as project ideas next!
+                            I've seen a couple visualizer apps for various algorithms kicking about on 
+                            the web and think something of this ilk would be pretty fun (and probably 
+                            challenging) to have a go at. Most are geared at sorting algorithms or 
+                            pathfinders but I think a Red-Black Tree visualizer might be interesting - we'll see.
                         </p>
                         <p>
-                            Something else that I find really interesting, more as an aside, is game 
-                            programming with C++. I've seen a couple of neat C++ games kicking about and would 
-                            love to try my hand and getting my own up and running!
-                        </p>
-                        <p>
-                            Lots to look at here and there, and certainly enough to keep me busy through 
-                            lockdown and beyond!
+                            Most of the programming I've done to date has been done in C/C++ but I'd 
+                            really like to get some exposure to Go and/or Python so I'll almost definitely 
+                            look at a project that will allow me some exposure to one or both of these soon!
                         </p>
                     </div>
                 </div>
