@@ -224,15 +224,15 @@ i:hover{
     .title-body{
         padding-top: 20% !important;}
     .footer{
-        font-size: 0.7em;}
+        font-size: 0.8em;}
     .projects-body{
         padding-top: 10%;}
     .projects-title{
         padding-top: 0%;}
     .tab-list li a p{
-        font-size: 0.8em !important;}
+        font-size: 1em !important;}
     .projects-content p{
-        font-size: 0.8em;
+        font-size: 1em;
         font-family: 'Roboto', sans-serif;
         font-weight: 100;
         margin-top: 10px;}
