@@ -198,6 +198,21 @@ i:hover {
     padding-top: 10%;
     text-align: center;
 }
+.repo-link{
+    text-emphasis: none;
+    color: black;
+    text-align: center;
+    margin: 20px;
+}
+.repo-link:hover{
+    color: black;
+}
+.repo-link-pic{
+    color: black;
+}
+.repo-link:hover .repo-link-pic{
+    color: #4CAF50;
+}
 
   /* Footer */
 .footer {
@@ -238,11 +253,15 @@ i:hover {
 }
 /* Aspect ratio things */
 @media (min-aspect-ratio: 8/5){
-    .title-body, .projects-body{
+    .title-body{
         padding-top: 2% !important;
     }
     .about-body{
         margin-top: 5%;
+    }
+    .projects-body{
+        padding-top: 0%;
+        margin-top: 7.5%;
     }
     .info{
         padding-top: 10%;
