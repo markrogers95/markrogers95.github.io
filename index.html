@@ -4,14 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
     <!-- My style sheets -->
     <link rel="stylesheet" href="css/nav.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" rel="stylesheet">
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a3194b321f.js" crossorigin="anonymous"></script>
@@ -21,96 +18,52 @@
   </head>
 
   <body>
-    <!--Nav bar wrapper -->
-    <nav id="global-nav" class="navbar navbar-expand-md navbar-dark fixed-top">
-        <div class="container">
-            <a id="navbar-brand" class="navbar-brand" href="#top">
-                Mark Rogers
-            </a>
-            <button type="button" data-toggle="collapse" data-target="#navbarTabs" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarTabs" class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="">                      
-                        <a class="nav-link" href="#aboutBut">
-                            <svg class="activeRect">
-                                <rect x="0" y="0" fill="none" width="100%" height="100%"/>                                
-                            </svg>
-                            About
+    
+    <!-- background image -->
+    <div id="bg">
+        <img src="images/anne-nygard-wgggZIP_voA-unsplash.jpg" alt="Full-screen background image of a plant"/>   
+    </div>
+
+    <!-- title section -->
+    <section>
+        <div class="title-wrap">
+            <div class="title-body">
+                <h1 class="mainTitle">
+                    MARK ROGERS
+                </h1>
+                <h2 class="title-under">
+                    a 24 year old maths graduate pursuing a career in tech
+                </h2>
+                <ul class="socialMenu list-inline listPos">
+                    <li class="mail list-inline-item">
+                        <a href="./contact/contact.html">
+                            <i class="far fa-envelope" ></i>
                         </a>
                     </li>
-                    <li class="">
-                        <a class="nav-link" href="#projectBut">
-                            <svg class="activeRect">
-                                <rect x="0" y="0" fill="none" width="100%" height="100%"/>                                
-                            </svg>
-                            Projects
+                    <li class = "linkedIn list-inline-item">
+                        <a href="https://uk.linkedin.com/in/mark-rogers-22260b102">
+                            <i class="fab fa-linkedin"></i></a>
                         </a>
                     </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="">
-                        <a class="nav-link" href="./contact/contact.html">
-                            <svg class="activeRect">
-                                <rect x="0" y="0" fill="none" width="100%" height="100%"/>                                
-                            </svg>
-                            Contact
+                    <li class = "github list-inline-item">
+                        <a href="https://github.com/markrogers95">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class = "instagram list-inline-item">
+                        <a href="https://www.instagram.com/markrogers95/?hl=en">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class = "facebook list-inline-item">
+                        <a href="https://www.facebook.com/mark.rogers.7543">
+                            <i class="fab fa-facebook"></i>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
-    
-    <!-- background image -->
-    <div id="bg">
-        <img src="images/anne-nygard-wgggZIP_voA-unsplash.jpg" alt=""/>   
-    </div>
-
-    <!-- landing title wrap -->
-    <div class="title-wrap">
-        <div class="title-body">
-            <h1 class="mainTitle">
-                MARK ROGERS
-            </h1>
-            <ul class="socialMenu list-inline listPos">
-                <li class="mail list-inline-item">
-                    <a href="./contact/contact.html">
-                        <i class="far fa-envelope" ></i>
-                    </a>
-                </li>
-                <li class = "linkedIn list-inline-item">
-                    <a href="https://uk.linkedin.com/in/mark-rogers-22260b102">
-                        <i class="fab fa-linkedin"></i></a>
-                    </a>
-                </li>
-                <li class = "github list-inline-item">
-                    <a href="https://github.com/markrogers95">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class = "instagram list-inline-item">
-                    <a href="https://www.instagram.com/markrogers95/?hl=en">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class = "facebook list-inline-item">
-                    <a href="https://www.facebook.com/mark.rogers.7543">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-            </ul>
-            <ul id="abScroll" class = "scrollList list-inline">
-                <li class="landScroll list-inline-item">
-                    <a href="#aboutBut" style="text-decoration: none;" id="chev">
-                        <i id="chev" class="fas fa-chevron-right"></i>
-                        Learn More
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    </section>
 
     <!-- about wrapper -->
     <div id="abLoc" class="aboutWrap contact-script">
@@ -235,6 +188,47 @@
               </div>
         </div>
     </div>
+    <!--Nav bar wrapper -->
+    <nav id="global-nav" class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container">
+            <a id="navbar-brand" class="navbar-brand" href="#top">
+                Mark Rogers
+            </a>
+            <button type="button" data-toggle="collapse" data-target="#navbarTabs" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarTabs" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="">                      
+                        <a class="nav-link" href="#aboutBut">
+                            <svg class="activeRect">
+                                <rect x="0" y="0" fill="none" width="100%" height="100%"/>                                
+                            </svg>
+                            About
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="nav-link" href="#projectBut">
+                            <svg class="activeRect">
+                                <rect x="0" y="0" fill="none" width="100%" height="100%"/>                                
+                            </svg>
+                            Projects
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="">
+                        <a class="nav-link" href="./contact/contact.html">
+                            <svg class="activeRect">
+                                <rect x="0" y="0" fill="none" width="100%" height="100%"/>                                
+                            </svg>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- footer -->
     <div id="footer" class="footer">
